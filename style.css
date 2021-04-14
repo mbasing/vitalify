@@ -9,14 +9,50 @@
 html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
 }
 .header {
-  border: 1px solid red;
   height: 7rem;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  background-color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.header i {
+  color: dodgerblue;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-right: 5rem;
+  /* display: none; */
+}
+
+.header__text {
+  display: flex;
+  margin-left: 5rem;
+  width: 70vw;
+  padding-top: 2.5rem;
+  justify-content: space-evenly;
+}
+
+.header__text p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.header__text p:hover {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid white;
+}
+
+.header img {
+  margin-top: 1rem;
+  margin-left: 3rem;
 }
 
 .main {
@@ -28,6 +64,7 @@ a {
 
 #main__text {
   padding: 1rem 1rem 1rem 5rem;
+  margin-top: 7rem;
 }
 
 #main__text span {
@@ -42,6 +79,7 @@ a {
 #main__image {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-top: 7rem;
 }
 
 #main__subtext {
@@ -134,12 +172,6 @@ a {
 form {
   width: 25rem;
 }
-
-/* .contact-us {
-  text-align: center;
-  border: 1px solid red;
-  margin: 2rem auto;
-} */
 
 .footer {
   height: 7rem;
