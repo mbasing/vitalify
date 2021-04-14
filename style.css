@@ -11,6 +11,14 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+.header {
+  border: 1px solid red;
+  height: 7rem;
+}
+
 .main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -27,7 +35,7 @@ html {
 }
 
 #main__text h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   color: #333;
 }
 
@@ -121,4 +129,27 @@ html {
 .aside__text p {
   font-size: 1.8rem;
   color: #444;
+}
+
+form {
+  width: 25rem;
+}
+
+/* .contact-us {
+  text-align: center;
+  border: 1px solid red;
+  margin: 2rem auto;
+} */
+
+.footer {
+  height: 7rem;
+  text-align: center;
+  padding-top: 2.5rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #333;
+}
+
+.footer span {
+  color: dodgerblue;
 }
