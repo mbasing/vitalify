@@ -15,6 +15,7 @@ html {
 a {
   text-decoration: none;
 }
+
 .header {
   height: 7rem;
   width: 100vw;
@@ -29,7 +30,7 @@ a {
   font-size: 2rem;
   margin-top: 2.5rem;
   margin-right: 5rem;
-  /* display: none; */
+  display: none;
 }
 
 .header__text {
@@ -184,4 +185,98 @@ form {
 
 .footer span {
   color: dodgerblue;
+}
+
+.contact-us {
+  width: 40rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+input {
+  height: 3rem;
+  border: 0;
+  border-bottom: 1px solid #444;
+  outline: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: #282625;
+  padding-left: 2rem;
+}
+
+textarea {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+
+::placeholder {
+  color: #444;
+}
+
+input,
+textarea {
+  width: 35rem;
+}
+
+button {
+  margin: 1rem auto;
+  width: 12rem;
+  height: 3rem;
+  border-radius: 3px;
+  color: white;
+  background-color: dodgerblue;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+#alert {
+  display: none;
+  background-color: #93b65f;
+  color: white;
+  border-radius: 3px;
+  padding: 0.2rem 0.5rem;
+  width: 36rem;
+  margin: auto;
+  text-align: center;
+  animation: cssAnimation 0s ease-in 2s forwards;
+  transition: all 0.2s;
+}
+
+#numValidate {
+  display: none;
+  background-color: red;
+  color: white;
+  border-radius: 3px;
+  padding: 0.2rem 0.5rem;
+  width: 36rem;
+  margin: auto;
+  text-align: center;
+}
+
+@keyframes cssAnimation {
+  to {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__text p {
+    display: none;
+  }
+
+  .header i {
+    display: block;
+  }
+
+  .header img {
+    height: 3rem;
+    margin-top: 2rem;
+  }
 }

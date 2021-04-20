@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Vitalify</title>
+    <title>Vitalify Inc</title>
   </head>
   <body>
     <div class="container">
@@ -104,24 +104,44 @@
       <div class="aside_3 section">
         <h2 class="section__services" id="contact__us">Contact us</h2>
       </div>
+      <div id="alert"></div>
+
       <div class="contact-us">
-        <!-- <form id="contact" action="" method="post">
-              <fieldset>
-                <input placeholder="Name" type="text" tabindex="1" required autofocus>
-              </fieldset>
-              <fieldset>
-                <input placeholder="Email Address" type="email" tabindex="2" required>
-              </fieldset>
-              <fieldset>
-                <input placeholder="Phone Number" type="tel" tabindex="3" required>
-              </fieldset>
-              <fieldset>
-                <textarea placeholder="Kindly enter your message here" tabindex="5" required></textarea>
-              </fieldset>
-              <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-              </fieldset>
-            </form> -->
+        <form id="contact" action="" method="post" onsubmit="return false">
+          <input
+            placeholder="Full name *"
+            type="text"
+            tabindex="1"
+            id="fullName"
+            autofocus
+          />
+          <input
+            placeholder="Email Address *"
+            type="email"
+            tabindex="2"
+            id="emailAddress"
+          />
+          <input
+            placeholder="Phone Number *"
+            type="tel"
+            id="phoneNumber"
+            tabindex="3"
+          />
+          <p id="numValidate"></p>
+          <textarea
+            placeholder="Enter your message here *"
+            cols="30"
+            rows="5"
+            tabindex="5"
+            id="message"
+          ></textarea
+          ><br />
+          <a href="#">
+            <button name="submit" type="submit" id="contact-submit">
+              Submit
+            </button>
+          </a>
+        </form>
       </div>
       <div class="footer">
         <p>
